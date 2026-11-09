@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a2a">
+  <title>Jadiel Espinosaurio Simulator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Jadiel Espinosaurio Simulator, inicio">
+        <span class="brand-icon" aria-hidden="true">🦖</span>
+        <span>JADIEL <b>SIMULATOR</b></span>
+      </a>
+      <p class="controls-hint">SALTA CON <kbd>ESPACIO</kbd> O <kbd>↑</kbd></p>
+    </header>
+
+    <section class="game-card" aria-label="Juego de saltar barriles">
+      <div class="game-heading">
+        <div>
+          <p class="eyebrow">AVENTURA PREHISTÓRICA</p>
+          <h1>¡A correr, espinosaurio!</h1>
+        </div>
+        <div class="score-box" aria-live="polite">
+          <span>PUNTAJE</span>
+          <strong id="score">00000</strong>
+        </div>
+      </div>
+
+      <div class="game-frame">
+        <canvas id="game-canvas" width="900" height="320" aria-label="El espinosaurio corre y salta sobre barriles de petróleo"></canvas>
+        <div class="screen-overlay" id="screen-overlay">
+          <div class="overlay-content">
+            <span class="overlay-dino" aria-hidden="true">🦖</span>
+            <p class="eyebrow" id="overlay-eyebrow">¿LISTO PARA LA AVENTURA?</p>
+            <h2 id="overlay-title">Jadiel Espinosaurio Simulator</h2>
+            <p class="overlay-description" id="overlay-description">Salta sobre los barriles de petróleo y consigue el puntaje más alto.</p>
+            <button id="play-button" type="button">Jugar <span aria-hidden="true">→</span></button>
+            <p class="overlay-tip">También puedes tocar la pantalla para saltar</p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="game-footer">
+        <span><i class="status-dot" aria-hidden="true"></i> MODO SUPERVIVENCIA</span>
+        <span>Esquiva los barriles. ¡No dejes de correr!</span>
+      </footer>
+    </section>
+    <p class="page-note">Un pequeño desafío jurásico hecho para Jadiel <span aria-hidden="true">✦</span></p>
+  </main>
+</body>
+</html>
